@@ -24,13 +24,13 @@ p = zeros(size(X, 1), 1);
 
 
 
+
+
 X = [ones(m, 1) X];
 temp_1 = sigmoid(X * Theta1');
 temp_1 = [ones(m, 1) temp_1];
 temp_2 = sigmoid( temp_1 * Theta2');
 [~, p] = max(temp_2, [], 2);
-
-
 
 
 % =========================================================================
